@@ -1,0 +1,133 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+:root {
+    --primary-color: #ffc107;
+    --secondary-color: #343a40;
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.category-card {
+    transition: transform .3s ease, box-shadow .3s ease;
+    border: none;
+    border-radius: 15px;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.btn-warning {
+        transition: all 0.3s ease;
+}
+    
+.btn-warning:hover {
+        transform: scale(1.05);
+}
+
+/*Estilos del menú*/
+
+.product-card {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-img {
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.05);
+}
+
+.price-badge {
+    font-size: 1.2rem;
+    background-color: #ffc107;
+}
+
+/*Estilos del formulario del menú*/
+#categoria-titulo,
+#categoria-descripcion {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.alert {
+    z-index: 1050;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.btn-primary {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+/*Estilos del carrito*/
+.producto-img-carro {
+    height: 150px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.cantidad-control {
+    max-width: 120px;
+}
